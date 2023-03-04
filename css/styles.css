@@ -1,0 +1,199 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "TenorSans-Regular";
+  src: url(../fonts/TenorSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Voga Medium";
+  src: url(../fonts/CDType\ -\ Voga\ Medium.ttf);
+}
+/*Inicio HEADER*/
+header {
+  padding: 1rem;
+  margin: 5px;
+  background-image: url(../assets/img/Fondoheader.png);
+}
+
+h1 {
+  font-family: "Voga Medium";
+  font-size: 60px;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+h5, h3 {
+  font-family: "TenorSans-Regular";
+}
+
+div {
+  margin: 1%;
+  padding: 1%;
+}
+
+/*FIN HEADER*/
+/*Modificadores de mi menú de navegación*/
+nav {
+  width: 100%;
+  border: solid rgb(167, 165, 165);
+  border-width: 1, 5 px;
+  margin: 1px;
+  padding: 1rem;
+}
+
+ul {
+  padding: 1rem;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+li {
+  font-family: "TenorSans-Regular";
+  list-style-type: none;
+  align-items: stretch;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Secciones centrales 2 columnas*/
+.central {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*Edición letras textos*/
+p {
+  font-family: "TenorSans-Regular";
+  font-size: large;
+  text-align: justify;
+}
+
+h2 {
+  font-family: "TenorSans-Regular";
+  font-size: xx-large;
+}
+
+.frase {
+  margin: 5px;
+  padding: 10px;
+  background-color: hotpink;
+  font-style: oblique;
+  font-size: x-large;
+}
+
+/*Tarjetas productos*/
+.tarjproducto {
+  width: 300px;
+  height: 350px;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.tarjproducto:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*Edición Tabla contacto*/
+.tablaestilo {
+  margin: 3px;
+  padding: 2px;
+  width: 85%;
+  font-family: "TenorSans-Regular";
+  border: solid grey 1, 5px;
+}
+
+caption {
+  margin: 10px;
+  padding: 5px;
+  background-color: aqua;
+}
+
+.form {
+  padding: 1rem;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: solid grey 1, 5px;
+  border-width: 1, 5 px;
+  font-family: "TenorSans-Regular";
+}
+
+.button {
+  background-color: hotpink;
+}
+
+tbody {
+  border: solid grey 1, 5px;
+  border-width: 1, 5 px;
+}
+
+/* Modificadores del footer*/
+footer {
+  padding: 1rem;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  align-self: center;
+}
+
+.imgfooter {
+  width: 60px;
+  height: 60px;
+}
+
+/*Mobyle styles*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  h1 {
+    font-size: 35px;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+  h3, h5 {
+    font-size: 20px;
+  }
+  p {
+    font-size: xx-small;
+    text-align: justify;
+  }
+  li {
+    font-size: xx-small;
+  }
+  h2 {
+    font-size: small;
+  }
+  .frase {
+    margin: 5px;
+    padding: 10px;
+    background-color: hotpink;
+    font-style: oblique;
+    font-size: small;
+  }
+  .imgfooter {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
