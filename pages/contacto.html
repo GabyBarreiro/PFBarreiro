@@ -74,53 +74,24 @@
             </div>
         </div>    
 
-        <!--Tabla y formulario de contacto-->
-        <section class="central">
-            <div class="central">
-                <table class="tablaestilo">
-                    <caption>
-                        <strong>TE DEJAMOS TODOS NUESTROS CANALES DE COMUNICACION</strong>
-                    </caption>
-                    <tbody>
-                        <tr>
-                            <td>Escribe tu mensaje</td>
-                            <td> O puedes chatear con nosotros por aquí</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <form action="../forms/" method="post">
-                                    <ul class="form">
-                                       <li>
-                                       <label for="name">Apellido y Nombre:</label>
-                                       <input type="text" id="name" name="user_name">
-                                       </li>
-                                       <li>
-                                       <label for="mail">Correo electrónico:</label>
-                                       <input type="email" id="mail" name="user_mail">
-                                       </li>
-                                       <li>
-                                       <label for="msg">Tu mensaje:</label>
-                                       <textarea id="msg" name="user_message"></textarea>
-                                       </li>
-                                       
-                                    </ul> 
-                                </form>   
-                            <td> WhatsApp directo</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <li class="button">
-                                   <button type="submit">Enviar</button> 
-                                </li> 
-                            </td>
-                            <td>
-                                <a href="https://www.wa.link/6tq26f">
-                                   <img src="../assets/img/whatsappfrase.png" width="233px" height="56px">
-                                </a>
-                            </td>
-                        </tr>    
-                    </tbody>
-                </table>
+        <!--Encabezado contactos-->
+        <section class="container-fluid text-center">
+            <h5>TE DEJAMOS NUESTROS CANALES DE COMUNICACION</h5>
+                <!--Tabla y formulario de contacto-->
+            <div class="row">
+                <div class="col">
+                    <h6>Puedes dejarnos un mensaje</h6>
+                    <input type="text" class="form-control" placeholder="Apellido y Nombre" aria-label="Apellido y Nombre">
+                    <input type="email" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico">
+                    <input type="text" class="form-control" placeholder="Mensaje" aria-label="Escribe tu mensaje">
+                    <button type="submit" class="button">Enviar</button>
+                </div>
+                <div class="col">
+                    <h6>O puedes chatear con nosotros por aquí</h6>
+                    <a href="https://www.wa.link/6tq26f">
+                        <img src="../assets/img/whatsappfrase.png" width="233px" height="56px">
+                     </a>
+                </div>
             </div>
         </section>
 
