@@ -1,17 +1,13 @@
+/*Import*/
+@import "fonts";
+@import "footer";
+@import "header";
+
 * {
     margin: 0;
     padding: 0;
 }
 
-@font-face {
-    font-family: "TenorSans-Regular";
-    src:url(../fonts/TenorSans-Regular.ttf)
-}
-
-@font-face {
-    font-family: "Voga Medium";
-    src:url(../fonts/CDType\ -\ Voga\ Medium.ttf)
-}
                         /*Inicio HEADER*/
 header {
     padding: 1rem;
@@ -107,60 +103,54 @@ h2 {
 .tarjproducto:hover{
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
-      
-                         /*Edición Tabla contacto*/
-.tablaestilo {
-    margin: 3px;
-    padding: 2px;
-    width: 85%;
-    font-family: "TenorSans-Regular";
-    border: solid grey 1,5px 
-}
-
-caption {
-   margin: 10px;
-   padding: 5px;
-   background-color:aqua;
-}
-
-.form {
-    padding: 1rem;
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border: solid  grey 1,5px; 
-    border-width: 1,5 px;
-    font-family: "TenorSans-Regular";
-}
-
+                          /*Botones*/
 .button {
     background-color:hotpink;
+    font-family: "TenorSans-Regular";
 }
 
-tbody {
-    border: solid  grey 1,5px; 
-    border-width: 1,5 px;
+.boton-item {
+    border: none;
+    background-color:hotpink;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "TenorSans-Regular";
 }
 
-                     /* Modificadores del footer*/
-footer {
-    padding: 1rem;
-    margin: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.precio-item {
+    display: block;
+    text-align: center;
+    font-family: "TenorSans-Regular";
+    font-weight: bold;
+    margin-top: auto;
+    font-size: 20px;
 }
 
-.footer {
-    align-self: center;
+.btn-eliminar {
+    cursor: pointer;
 }
 
-.imgfooter {
-    width: 60px; 
-    height: 60px;
+.btn-pagar {
+    width: 100%;
+    display: inline-block;
+    font-family: "TenorSans-Regular";
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
 }
+
+.btn-pagar:hover{
+    scale:1.05;
+}
+    
+.btn-enviar {
+    width: 15%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "TenorSans-Regular";
+    margin-top: 10px;
+
+}  
 
 /*Mobyle styles*/
 @media only screen and (min-width:320px) and (max-width: 480px){ 
@@ -202,4 +192,36 @@ footer {
         width: 50px; 
         height: 50px;
     }
+}
+
+/*Carrito*/
+.carrito {
+    border: 1px solid #bfbbbb;
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carrito-item-cantidad {
+    border: none;
+    display: inline-block;
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.selector-cantidad i{
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #bfbbbb;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    line-height: 32px;
+    display: inline-block;
+}
+
+.carrito-precio-total {
+    padding: 5px;
 }
